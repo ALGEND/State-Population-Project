@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image" href="<link rel="icon" type="image" href="https://cdn.pixabay.com/photo/2017/07/27/00/46/fantasy-2543658_960_720.jpg">">
+    <title>US State Population Migration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Bootstrap CSS -->
+    
+     
+
+</head>
+
+<body class="text-white" style="background-color:rgb(179, 179, 180);">
+    <div class="container">
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-left" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/82/Chicago_sunrise_1.jpg); background-size: 100%; height: 100%;">
+        <h1 style="color:#fdfdff;" class="display-4">State Population Migration Change</h1>
+        <a class="btn btn-lg text-white" style="background-color:#f8f4f4;" href="/map" role="button">State Population Migration Map</a>
+    </div>
+
+    <div id="choice">
+        <h5>SELECT STATE:</h5>
+        <select id="selState" onchange="optionChanged(this.value)"></select>
+    </div>
+    
+    <div id="plot"></div>
+    <h5>*From 2018 line is based on projections</h5>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
